@@ -11,23 +11,31 @@ function sanitize(input) {
 function handleClick(event){
   userNumber = sanitize(document.querySelector("#guess").value);
   console.log(userNumber);
+
+let attempts = 5;
+let help;
+
     // Controllo del numero inserito
     if (userNumber > randomNumber) {
-      console.log("Troppo grande!");
+      help = document.querySelector("#help").innerHTML = "Troppo Grande"
       attempts--;
+      attempts = document.querySelector("#tentativi").innerHTML = "Hai ancora " + (5-1) + " tentativi ";
     } else if (userNumber < randomNumber) {
-      console.log("Troppo piccolo!");
+      help = document.querySelector("#help").innerHTML = "Troppo piccolo"
       attempts--;
+      attempts = document.querySelector("#tentativi").innerHTML = "Hai ancora " + (5-1) + " tentativi "; 
     } else {
-      console.log("Bravo, hai vinto!");
+      help =  document.querySelector("#help").innerHTML = "Hai vinto!";
+      attempts--
+      attempts = document.querySelector("#tentativi").innerHTML = "Hai ancora " + (5-1) + " tentativi ";
+      let win = document.querySelector("#win").innerHTML = "Hai impiegato" + attempts + " tentativi "
     }
 
     if (attempts === 0){
-      console.log("Hai perso!,  il numero era " + randomNumber);
+      help = document.querySelector("#help").innerHTML = "Hai perso, il numero era" +  randomNumber
     }
   } 
   
-let attempts = 5;
 
 let randomNumber = generateRandomNumber(1,100)
 console.log(randomNumber)
