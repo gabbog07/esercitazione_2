@@ -14,7 +14,7 @@
   </head>
 
   <body>
-    <div class="container">
+    <div id="background" class="hero body-green transition">
       <header class="title">
         <h1 class="inter-bold">INDOVINA IL NUMERO</h1>
       </header>
@@ -51,20 +51,20 @@
             tentativi possibile!
           </li>
         </ol>
-        <div class="button">
-          <label for="inter">Inserisci il numero magico</label>
-          <form action="" method="get">
+        <div class="button  transition">
+          <label for="guess">Inserisci il numero magico</label>
+          <form action="">
             <input type="number" name="guess" id="guess" />
             <input type="button" name="btn" id="guessBtn" value="Indovina" />
           </form>
         </div>
         <footer class="d-flex flex-column align-items-center">
-          <label for="inter" id="help"></label>
-          <label for="inter" id="tentativi"></label>
-          <label for="inter" id="win"></label>
+          <label id="help"></label>
+          <label id="tentativi"></label>
+          <label id="win"></label>
         </footer>
       </main>
     </div>
-    <script src="static/js/esercizio2.js"></script>
+    <script type="text/javascript" src="static/js/esercizio2.js"></script>
   </body>
 </html>

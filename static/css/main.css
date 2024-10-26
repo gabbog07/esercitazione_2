@@ -6,9 +6,11 @@
     font-size: 16px;
     line-height: auto;
     text-align: left;
+    margin-bottom: 0;
 }
 
 .main ol{
+    margin-bottom: 0;
     font-size: 16px;
     line-height: auto;
     text-align: left;

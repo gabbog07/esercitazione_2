@@ -1,7 +1,23 @@
-.container{
+.hero{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    height: 150vh;
+    
+}
+
+.body-green{
     background-color: #CCFFC5;
+}
+
+.body-yellow{
+    background-color: #fbe106;
+}
+
+.body-red{
+    background-color: #ca3433;
+}
+
+.transition{
+    transition: all 2s;
 }
